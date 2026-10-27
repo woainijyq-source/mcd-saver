@@ -1,7 +1,11 @@
 ---
+slug: mcd-saver
 name: mcd-saver
-display_name: 麦麦省钱助手
+displayName: 麦兜省钱助手
+display_name: 麦兜省钱助手
 display_name_en: McD Saver
+version: 1.0.0
+summary: 麦当劳点餐省钱助手。查券、领券、凑单、比价，算出每一单最省的点法。支持按预算、按热量、指定想吃的东西三种入口，会主动找凑单机会，并逐张说明哪张券为什么没用上。
 description: 麦当劳点餐省钱助手。查券、领券、凑单、比价，给出可执行的点单清单和确定的省钱金额。触发词：麦当劳、麦当劳怎么点最省、帮我领券、30块能吃啥、这个套餐划算吗、想吃X怎么凑单、控制热量、麦麦省、优惠券怎么用。
 description_zh: 麦当劳点餐省钱助手。把散落在各处的优惠券、麦麦省券、积分和套餐组合算清楚，找出每一单最省钱的点法，给出可执行的点单清单和确定的省钱金额。当用户问「麦当劳怎么点最省」「帮我领券」「30块能吃啥」「这个套餐划算吗」「想吃X怎么凑单」「控制热量又要便宜」时使用。
 description_en: A McDonald's China deal optimizer that finds the cheapest way to order by combining coupons, thresholds, and combo meals.
