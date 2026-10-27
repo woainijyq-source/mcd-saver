@@ -76,13 +76,16 @@ tags:
 
 ### 第 2 步：跑引擎
 
-以下命令都在技能根目录执行（即 SKILL.md 所在目录）。
+技能通常安装在 `~/.workbuddy/skills/mcd-saver/`。**用绝对路径调用最稳**，不依赖当前工作目录：
 
 ```bash
-python3 scripts/cli.py --budget 30 --time 12:30          # 直接出推荐
-python3 scripts/cli.py --budget 30 --time 12:30 --json   # 机器可读，Agent 首选
-python3 scripts/cli.py --want "麦乐鸡10块" --budget 27     # 指定想吃的东西，自动凑单
+python3 ~/.workbuddy/skills/mcd-saver/scripts/cli.py --budget 30 --time 12:30
+python3 ~/.workbuddy/skills/mcd-saver/scripts/cli.py --budget 30 --time 12:30 --json
+python3 ~/.workbuddy/skills/mcd-saver/scripts/cli.py --want "麦乐鸡10块" --budget 27
 ```
+
+已在技能目录下时，`python3 scripts/cli.py ...` 等价。脚本内部用 `__file__` 定位数据文件，
+从任何目录执行都能正确读到演示菜单。
 
 常用参数：
 
