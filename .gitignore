@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# 技能包产物
+*.skill
+*.zip
+
+# 本地数据与密钥
+.env
+**/mcp.json
+!mcp-config.example.json
+*.local.json
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/

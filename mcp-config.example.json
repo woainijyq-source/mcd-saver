@@ -1,0 +1,12 @@
+{
+  "_comment": "麦当劳中国 MCP 接入配置。把 ${MCD_MCP_TOKEN} 换成 open.mcd.cn/mcp 申请到的真实 Token。注意：部分客户端不解析 ${} 环境变量占位符，粘贴后需要手动替换成真实 Token，否则会 401。",
+  "mcpServers": {
+    "mcd-mcp": {
+      "type": "streamablehttp",
+      "url": "https://mcp.mcd.cn",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  }
+}

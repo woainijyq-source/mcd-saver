@@ -1,0 +1,50 @@
+{
+  "_comment": "演示菜单。价格与热量为贴近真实的示意值，实际以麦当劳 MCP 的 query-meals / list-nutrition-foods 返回为准，请用 loader.menu_from_mcp 转换。",
+  "currency": "CNY",
+  "items": [
+    {"sku": "combo_spicy_chicken",   "name": "麦辣鸡腿堡套餐",     "price": 36.0, "calories": 1006, "protein": 33, "weight_g": 560, "category": "套餐", "is_combo": true,  "max_qty": 2},
+    {"sku": "combo_double_cheese",   "name": "双层吉士汉堡套餐",   "price": 33.0, "calories": 924,  "protein": 32, "weight_g": 520, "category": "套餐", "is_combo": true,  "max_qty": 2},
+    {"sku": "combo_grilled_chicken", "name": "板烧鸡腿堡套餐",     "price": 37.0, "calories": 958,  "protein": 35, "weight_g": 545, "category": "套餐", "is_combo": true,  "max_qty": 2},
+    {"sku": "combo_big_mac",         "name": "巨无霸套餐",         "price": 39.5, "calories": 984,  "protein": 34, "weight_g": 580, "category": "套餐", "is_combo": true,  "max_qty": 2},
+    {"sku": "combo_filet_o_fish",    "name": "麦香鱼套餐",         "price": 31.0, "calories": 817,  "protein": 24, "weight_g": 480, "category": "套餐", "is_combo": true,  "max_qty": 2},
+    {"sku": "combo_nuggets_10",      "name": "麦乐鸡10块套餐",     "price": 34.0, "calories": 917,  "protein": 36, "weight_g": 515, "category": "套餐", "is_combo": true,  "max_qty": 2},
+
+    {"sku": "burger_spicy_chicken",  "name": "麦辣鸡腿堡",         "price": 22.0, "calories": 519,  "protein": 22, "weight_g": 205, "category": "汉堡", "max_qty": 3},
+    {"sku": "burger_double_cheese",  "name": "双层吉士汉堡",       "price": 20.0, "calories": 437,  "protein": 24, "weight_g": 165, "category": "汉堡", "max_qty": 3},
+    {"sku": "burger_grilled_chicken","name": "板烧鸡腿堡",         "price": 23.0, "calories": 471,  "protein": 26, "weight_g": 210, "category": "汉堡", "max_qty": 3},
+    {"sku": "burger_big_mac",        "name": "巨无霸",             "price": 25.0, "calories": 497,  "protein": 25, "weight_g": 215, "category": "汉堡", "max_qty": 3},
+    {"sku": "burger_filet_o_fish",   "name": "麦香鱼",             "price": 17.0, "calories": 330,  "protein": 15, "weight_g": 140, "category": "汉堡", "max_qty": 3},
+    {"sku": "burger_cheese",         "name": "吉士汉堡",           "price": 12.0, "calories": 300,  "protein": 15, "weight_g": 115, "category": "汉堡", "max_qty": 3},
+
+    {"sku": "side_fries_large",      "name": "大薯条",             "price": 15.0, "calories": 460,  "protein": 6,  "weight_g": 150, "category": "小食", "max_qty": 3},
+    {"sku": "side_fries_medium",     "name": "中薯条",             "price": 12.0, "calories": 337,  "protein": 4,  "weight_g": 115, "category": "小食", "max_qty": 3},
+    {"sku": "side_fries_small",      "name": "小薯条",             "price": 8.0,  "calories": 220,  "protein": 3,  "weight_g": 75,  "category": "小食", "max_qty": 3},
+    {"sku": "side_corn_cup",         "name": "玉米杯",             "price": 9.0,  "calories": 110,  "protein": 3,  "weight_g": 110, "category": "小食", "max_qty": 3},
+    {"sku": "side_apple_slices",     "name": "苹果片",             "price": 6.0,  "calories": 35,   "protein": 0,  "weight_g": 80,  "category": "小食", "max_qty": 3},
+    {"sku": "side_hash_brown",       "name": "薯饼",               "price": 4.0,  "calories": 150,  "protein": 2,  "weight_g": 55,  "category": "小食", "max_qty": 3},
+    {"sku": "side_wings_2",          "name": "麦辣鸡翅2块",        "price": 14.0, "calories": 240,  "protein": 14, "weight_g": 95,  "category": "小食", "max_qty": 3},
+    {"sku": "side_wings_4",          "name": "麦辣鸡翅4块",        "price": 25.0, "calories": 480,  "protein": 28, "weight_g": 190, "category": "小食", "max_qty": 2},
+    {"sku": "nuggets_5",             "name": "麦乐鸡5块",          "price": 14.0, "calories": 215,  "protein": 13, "weight_g": 85,  "category": "小食", "max_qty": 3},
+    {"sku": "nuggets_10",            "name": "麦乐鸡10块",         "price": 26.0, "calories": 430,  "protein": 26, "weight_g": 170, "category": "小食", "max_qty": 2},
+
+    {"sku": "drink_cola_medium",     "name": "中杯可乐",           "price": 10.0, "calories": 150,  "protein": 0,  "weight_g": 400, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_cola_large",      "name": "大杯可乐",           "price": 11.5, "calories": 225,  "protein": 0,  "weight_g": 600, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_cola_zero",       "name": "零度可乐中杯",       "price": 10.0, "calories": 0,    "protein": 0,  "weight_g": 400, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_sprite_medium",   "name": "中杯雪碧",           "price": 10.0, "calories": 145,  "protein": 0,  "weight_g": 400, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_orange_juice",    "name": "橙汁",               "price": 12.0, "calories": 150,  "protein": 1,  "weight_g": 300, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_iced_coffee",     "name": "冰咖啡",             "price": 11.0, "calories": 90,   "protein": 2,  "weight_g": 350, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_hot_coffee",      "name": "热咖啡",             "price": 9.0,  "calories": 5,    "protein": 1,  "weight_g": 250, "category": "饮料", "max_qty": 3},
+    {"sku": "drink_water",           "name": "纯净水",             "price": 6.0,  "calories": 0,    "protein": 0,  "weight_g": 550, "category": "饮料", "max_qty": 3},
+
+    {"sku": "dessert_mcflurry_oreo", "name": "麦旋风奥利奥",       "price": 13.0, "calories": 280,  "protein": 6,  "weight_g": 190, "category": "甜品", "max_qty": 2},
+    {"sku": "dessert_cone",          "name": "圆筒冰淇淋",         "price": 5.0,  "calories": 145,  "protein": 4,  "weight_g": 90,  "category": "甜品", "max_qty": 3},
+    {"sku": "dessert_cone_mini",     "name": "迷你圆筒",           "price": 3.0,  "calories": 90,   "protein": 2,  "weight_g": 55,  "category": "甜品", "max_qty": 3},
+    {"sku": "dessert_sundae",        "name": "新地巧克力",         "price": 9.5,  "calories": 230,  "protein": 5,  "weight_g": 150, "category": "甜品", "max_qty": 2},
+
+    {"sku": "breakfast_egg_mcmuffin",  "name": "吉士蛋麦满分",     "price": 12.0, "calories": 300,  "protein": 16, "weight_g": 125, "category": "早餐", "max_qty": 2},
+    {"sku": "breakfast_sausage_egg",   "name": "猪柳蛋麦满分",     "price": 15.0, "calories": 400,  "protein": 19, "weight_g": 145, "category": "早餐", "max_qty": 2},
+    {"sku": "breakfast_grilled_muffin","name": "板烧鸡腿麦满分",   "price": 16.0, "calories": 380,  "protein": 22, "weight_g": 150, "category": "早餐", "max_qty": 2},
+
+    {"sku": "extra_sauce",           "name": "甜酸酱",             "price": 0.5,  "calories": 20,   "protein": 0,  "weight_g": 25,  "category": "加购", "max_qty": 3}
+  ]
+}

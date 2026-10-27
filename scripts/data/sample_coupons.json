@@ -1,0 +1,92 @@
+{
+  "_comment": "演示券包，覆盖真实在售的五种券型。字段名与麦当劳 MCP 的 query-my-coupons / available-coupons 做宽容映射，实际接入时用 loader.load_coupons_from_mcp 转换。",
+  "coupons": [
+    {
+      "couponId": "mms_30_5",
+      "name": "麦麦省 满30减5",
+      "kind": "threshold",
+      "threshold": 30,
+      "discount": 5,
+      "source": "麦麦省"
+    },
+    {
+      "couponId": "mms_50_10",
+      "name": "麦麦省 满50减10",
+      "kind": "threshold",
+      "threshold": 50,
+      "discount": 10,
+      "source": "麦麦省"
+    },
+    {
+      "couponId": "mms_20_3",
+      "name": "麦麦省 满20减3",
+      "kind": "threshold",
+      "threshold": 20,
+      "discount": 3,
+      "source": "麦麦省"
+    },
+    {
+      "couponId": "item_double_cheese_159",
+      "name": "双层吉士汉堡特价15.9",
+      "kind": "item_price",
+      "targetSku": "burger_double_cheese",
+      "itemPrice": 15.9,
+      "source": "我的券"
+    },
+    {
+      "couponId": "bogo_nuggets_5",
+      "name": "麦乐鸡5块买一送一",
+      "kind": "bogo",
+      "targetSku": "nuggets_5",
+      "buyQty": 1,
+      "freeQty": 1,
+      "source": "麦麦省"
+    },
+    {
+      "couponId": "second_half_fries",
+      "name": "中薯条第二份半价",
+      "kind": "bogo",
+      "targetSku": "side_fries_medium",
+      "secondHalf": true,
+      "source": "我的券"
+    },
+    {
+      "couponId": "rate_combo_grilled",
+      "name": "板烧鸡腿堡套餐8折",
+      "kind": "rate",
+      "rate": 0.8,
+      "maxCut": 6,
+      "appliesTo": ["combo_grilled_chicken"],
+      "channels": ["dine_in", "takeaway"],
+      "source": "门店券"
+    },
+    {
+      "couponId": "rate_breakfast_80",
+      "name": "早餐8折（10:30前）",
+      "kind": "rate",
+      "rate": 0.8,
+      "maxCut": 8,
+      "appliesCategories": ["早餐"],
+      "validTo": "10:30",
+      "channels": ["dine_in", "takeaway", "delivery"],
+      "source": "门店券"
+    },
+    {
+      "couponId": "free_delivery_39",
+      "name": "满39免配送费",
+      "kind": "free_delivery",
+      "threshold": 39,
+      "deliveryOnly": true,
+      "source": "麦乐送"
+    },
+    {
+      "couponId": "expired_25_4",
+      "name": "满25减4（已过期）",
+      "kind": "threshold",
+      "threshold": 25,
+      "discount": 4,
+      "expiresOn": "2026-09-30",
+      "source": "我的券"
+    }
+  ]
+}
