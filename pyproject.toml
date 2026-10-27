@@ -1,0 +1,19 @@
+[project]
+name = "mcd-saver"
+version = "1.0.0"
+description = "麦当劳点餐省钱助手：查券、领券、凑单、比价，算出每一单最省的点法"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "wade" }]
+keywords = ["mcdonalds", "coupon", "optimization", "skill"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/woainijyq-source/mcd-saver"
+
+# 核心引擎是纯标准库实现，CLI 入口在 scripts/cli.py。
+# 付费服务端（按量付费）见 server/ 目录，依赖见 server/requirements.txt。
+[tool.mcd-saver]
+entry = "scripts/cli.py"
+engine = "scripts/mcd_saver"

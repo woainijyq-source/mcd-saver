@@ -19,6 +19,15 @@ venv/
 !mcp-config.example.json
 *.local.json
 
+# 支付宝沙箱密钥（含应用私钥，绝不能提交）
+.alipay-sandbox.json
+.alipay-*
+server/.env
+
+# 服务端运行时产物
+server/var/
+server/__pycache__/
+
 # 系统
 .DS_Store
 Thumbs.db
@@ -26,3 +35,10 @@ Thumbs.db
 # 编辑器
 .vscode/
 .idea/
+/.alipay-sandbox.json
+
+# 服务端运行期订单库
+server/var/
+*.db
+*.db-wal
+*.db-shm
